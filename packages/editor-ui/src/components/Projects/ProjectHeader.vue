@@ -113,9 +113,9 @@ const onSelect = (action: string) => {
 					<N8nHeading bold tag="h2" size="xlarge">Tony - {{ projectName }}</N8nHeading>
 					<N8nText color="text-light">
 						<slot name="subtitle">
-							<span v-if="!projectsStore.currentProject">{{
-								i18n.baseText('projects.header.subtitle')
-							}}</span>
+							<span v-if="!projectsStore.currentProject"
+								>Tony - {{ i18n.baseText('projects.header.subtitle') }}</span
+							>
 						</slot>
 					</N8nText>
 				</div>
