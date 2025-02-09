@@ -110,7 +110,7 @@ const onSelect = (action: string) => {
 			<div :class="$style.projectDetails">
 				<ProjectIcon :icon="headerIcon" :border-less="true" size="medium" />
 				<div :class="$style.headerActions">
-					<N8nHeading bold tag="h2" size="xlarge">{{ projectName }}</N8nHeading>
+					<N8nHeading bold tag="h2" size="xlarge">Tony - {{ projectName }}</N8nHeading>
 					<N8nText color="text-light">
 						<slot name="subtitle">
 							<span v-if="!projectsStore.currentProject">{{
